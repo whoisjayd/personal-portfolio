@@ -1,0 +1,26 @@
+{
+    "name": "Jaydeep Solanki - ECE Student & Backend Developer",
+    "short_name": "Jaydeep Solanki",
+    "description": "Portfolio of Jaydeep Solanki - 4th year ECE student at Nirma University, passionate backend developer specializing in Python, FastAPI, AI/ML, and IoT solutions.",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "orientation": "any",
+    "categories": ["education", "technology", "portfolio"],
+    "lang": "en-US",
+    "dir": "ltr"
+}
