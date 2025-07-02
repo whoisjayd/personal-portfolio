@@ -14,3 +14,8 @@ jspm_packages/
 .eslintcache
 # Optional REPL history
 .node_repl_history
+*contact.js
+*fluid.js
+*main.js
+*portfolio-data.js
+notes.txt
