@@ -17,9 +17,17 @@
       <link rel="dns-prefetch" href="https://unpkg.com" />
       <!-- Font Loading: Optimized with font-display: swap -->
       <link
-         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
          rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+         media="print"
+         onload="this.media='all'"
          />
+      <noscript>
+         <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            />
+      </noscript>
       <!-- SEO Meta Tags: Concise and Targeted -->
       <meta
          name="description"
@@ -72,7 +80,7 @@
       <meta http-equiv="X-Content-Type-Options" content="nosniff" />
       <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
       <!-- Critical Resource Preloading -->
-      <link rel="preload" href="asset/pfp.jpg" as="image" type="image/jpeg" fetchpriority="high" />
+      <link rel="preload" href="https://images.weserv.nl/?url=https://www.jaydeepsolanki.me/asset/pfp.jpg&w=56" as="image" type="image/jpeg" fetchpriority="high" />
       <!-- Sitemap -->
       <link rel="sitemap" type="application/xml" href="sitemap.xml" />
       <!-- Structured Data: Optimized Schema.org for Person and WebPage -->
@@ -184,7 +192,10 @@
          }
       </script>
       <!-- Styles: Preload for Performance -->
-      <link rel="stylesheet" href="css/styles.min.css" fetchpriority="high" />
+      <link rel="stylesheet" href="css/styles.min.css" fetchpriority="high" media="print" onload="this.media='all'" />
+      <noscript>
+         <link rel="stylesheet" href="css/styles.min.css" />
+      </noscript>
    </head>
    <body>
       <!-- Loading Screen -->
@@ -205,6 +216,8 @@
                      class="profile-pic"
                      id="profile-image"
                      src="asset/pfp.jpg"
+                     srcset="https://images.weserv.nl/?url=https://www.jaydeepsolanki.me/asset/pfp.jpg&w=56 56w, https://images.weserv.nl/?url=https://www.jaydeepsolanki.me/asset/pfp.jpg&w=112 112w"
+                     sizes="56px"
                      alt="Jaydeep Solanki, Backend Developer and ECE Student"
                      fetchpriority="high"
                      loading="lazy"
@@ -217,7 +230,7 @@
                      >Email Me</a
                      >
                </div>
-               <div class="social-main" id="social-links" role="list" aria-label="Social media links"></div>
+               <div class="social-main" id="social-links" role="directory" aria-label="Social media links"></div>
             </div>
          </nav>
          <!-- Main Content Area -->
@@ -225,22 +238,22 @@
             <!-- Skills Section -->
             <section id="section1" aria-labelledby="skills-heading">
                <h2 class="section-title" id="skills-heading">Skills & Technologies</h2>
-               <div class="skill-tag-cloud" aria-label="Interactive skills visualization"></div>
+               <div class="skill-tag-cloud" role="group" aria-label="Interactive skills visualization"></div>
             </section>
             <!-- Experience Section -->
             <section id="section2" aria-labelledby="experience-heading">
                <h2 class="section-title" id="experience-heading">Professional Experience</h2>
-               <div class="main-clmn" id="experience-container" role="list" aria-label="Work experience"></div>
+               <div class="main-clmn" id="experience-container" role="directory" aria-label="Work experience"></div>
             </section>
             <!-- Extra-Curriculars Section -->
             <section id="section6" aria-labelledby="extracurricular-heading">
                <h2 class="section-title" id="extracurricular-heading">Extra-Curriculars</h2>
-               <div class="main-clmn" id="extracurricular-container" role="list" aria-label="Extra-curricular activities"></div>
+               <div class="main-clmn" id="extracurricular-container" role="directory" aria-label="Extra-curricular activities"></div>
             </section>
             <!-- Projects Section -->
             <section id="section3" aria-labelledby="projects-heading">
                <h2 class="section-title" id="projects-heading">Projects</h2>
-               <div class="main-clmn" id="projects-container" role="list" aria-label="Personal projects"></div>
+               <div class="main-clmn" id="projects-container" role="directory" aria-label="Personal projects"></div>
                <div class="all-projects-container">
                   <a
                      target="_blank"
@@ -255,7 +268,7 @@
             <!-- Certificates Section -->
             <section id="section5" aria-labelledby="certificates-heading">
                <h2 class="section-title" id="certificates-heading">Certificates & Achievements</h2>
-               <div class="main-clmn" id="certificates-container" role="list" aria-label="Certifications and achievements"></div>
+               <div class="main-clmn" id="certificates-container" role="directory" aria-label="Certifications and achievements"></div>
             </section>
             <!-- Contact Section -->
             <section id="section4" aria-labelledby="contact-heading">
@@ -287,14 +300,14 @@
       <!-- Navigation Dock -->
       <div class="hidden" id="dock-container" role="navigation" aria-label="Quick navigation dock">
          <div class="macos-dock" data-vel-plugin="MacOsDock" data-vel-view="root">
-            <div class="items" id="dock-items" role="list"></div>
+            <div class="items" id="dock-items" role="directory" role="list"></div>
          </div>
       </div>
       <!-- Scripts: Optimized with defer and fetchpriority -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
       <!-- <script src="asset/js/fluid.js" defer></script> -->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-      <script src="https://unpkg.com/veloxi/dist/veloxi.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+      <script src="https://unpkg.com/veloxi/dist/veloxi.min.js" defer></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
       <!-- <script src="js/portfolio-data.js" defer></script> -->
       <!-- <script src="js/main.js" defer fetchpriority="high"></script> -->
