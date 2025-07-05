@@ -80,7 +80,7 @@
       <meta http-equiv="X-Content-Type-Options" content="nosniff" />
       <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
       <!-- Critical Resource Preloading -->
-      <link rel="preload" href="https://images.weserv.nl/?url=https://www.jaydeepsolanki.me/asset/pfp.jpg&w=56" as="image" type="image/jpeg" fetchpriority="high" />
+      <link rel="preload" href="https://images.weserv.nl/?url=https://www.jaydeepsolanki.me/asset/pfp.jpg&w=56" as="image" type="image/jpeg"/>
       <!-- Sitemap -->
       <link rel="sitemap" type="application/xml" href="sitemap.xml" />
       <!-- Structured Data: Optimized Schema.org for Person and WebPage -->
@@ -181,14 +181,14 @@
       <!-- Styles: Preload for Performance -->
       <link
          rel="stylesheet"
-         href="https://cdn.jsdelivr.net/gh/whoisjayd/personal-portfolio/css/styles.min.css"
+         href="css/styles.min.css"
          media="print"
          onload="this.media='all'"
          />
       <noscript>
          <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/whoisjayd/personal-portfolio/css/styles.min.css"
+            href="css/styles.min.css"
             />
       </noscript>
    </head>
@@ -214,7 +214,6 @@
                      srcset="https://images.weserv.nl/?url=https://www.jaydeepsolanki.me/asset/pfp.jpg&w=56 56w, https://images.weserv.nl/?url=https://www.jaydeepsolanki.me/asset/pfp.jpg&w=112 112w"
                      sizes="56px"
                      alt="Jaydeep Solanki, Backend Developer and ECE Student"
-                     fetchpriority="high"
                      loading="lazy"
                      />
                   <a
@@ -298,16 +297,11 @@
             <div class="items" id="dock-items" role="group"></div>
          </div>
       </div>
-      <!-- Scripts: Optimized with defer and fetchpriority -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
-      <!-- <script src="asset/js/fluid.js" defer></script> -->
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
       <script src="https://unpkg.com/veloxi/dist/veloxi.min.js" defer></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-      <!-- <script src="js/portfolio-data.js" defer></script> -->
-      <!-- <script src="js/main.js" defer fetchpriority="high"></script> -->
-      <!-- <script src="js/contact.js" defer></script> -->
-      <script src="https://cdn.jsdelivr.net/gh/whoisjayd/personal-portfolio/js/bundle.min.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/gh/whoisjayd/personal-portfolio@latest/js/bundle.min.js" defer></script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-L21LLRLZHF" defer></script>
       <script>
          window.dataLayer = window.dataLayer || [];
