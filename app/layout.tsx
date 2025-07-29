@@ -11,7 +11,8 @@ import UmamiAnalytics from "@/components/analytics/umami-analytics"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ThemeToggle } from "@/components/theme-toggle"
-
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -36,6 +37,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Suspense fallback={null}>
           <GoogleAnalytics />
           <UmamiAnalytics />
+          <Analytics />
+          <SpeedInsights />
         </Suspense>
         <link rel="icon" href="/assets/favicon.ico" />
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
