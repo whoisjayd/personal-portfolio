@@ -7,6 +7,7 @@ import { GeistMono } from "geist/font/mono"
 import { generateSEO } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 import GoogleAnalytics from "@/components/analytics/google-analytics"
+import UmamiAnalytics from "@/components/analytics/umami-analytics"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <Suspense fallback={null}>
           <GoogleAnalytics />
+          <UmamiAnalytics />
         </Suspense>
         <link rel="icon" href="/assets/favicon.ico" />
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />

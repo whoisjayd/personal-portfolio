@@ -7,7 +7,7 @@ export const siteConfig = {
   description:
     "Final year ECE student from Nirma University passionate about backend engineering, developer tooling, and scalable systems. Building fast, reliable APIs and integrating AI into real-world applications.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://temppor-hazel.vercel.app",
-  ogImage: "/assets/og-default.png",
+  ogImage: "/assets/og-default.svg",
   twitterHandle: "@JaydeepS14216",
   author: "Jaydeep Solanki",
   email: "contact@jaydeepsolanki.me",
